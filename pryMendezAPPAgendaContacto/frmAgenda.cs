@@ -7,15 +7,7 @@ namespace pryMendezAPPAgendaContacto
             InitializeComponent();
         }
 
-        private void lstCompleto_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
+       
 
         private void txtContacto_TextChanged(object sender, EventArgs e)
         {
@@ -56,8 +48,14 @@ namespace pryMendezAPPAgendaContacto
             mtbNumero.Text = "";
         }
 
-        private void maskedTextBox1_MaskInputRejected_1(object sender, MaskInputRejectedEventArgs e)
+    
+       
+
+        private void btnAbrir_Click(object sender, EventArgs e)
         {
+            frmVerCContactos ventanaVerContacto = new frmVerCContactos();
+           
+
 
         }
     }

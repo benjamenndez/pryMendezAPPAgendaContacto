@@ -40,6 +40,7 @@
             lblFechaHora = new Label();
             mtbCantContacto = new MaskedTextBox();
             dtpFechaHora = new DateTimePicker();
+            btnAbrir = new Button();
             SuspendLayout();
             // 
             // lblAgenda
@@ -48,7 +49,7 @@
             lblAgenda.BackColor = SystemColors.ActiveCaption;
             lblAgenda.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblAgenda.ForeColor = Color.FromArgb(224, 224, 224);
-            lblAgenda.Location = new Point(59, 36);
+            lblAgenda.Location = new Point(38, 36);
             lblAgenda.Name = "lblAgenda";
             lblAgenda.Size = new Size(227, 25);
             lblAgenda.TabIndex = 0;
@@ -78,7 +79,7 @@
             // 
             mtbNumero.Enabled = false;
             mtbNumero.Location = new Point(128, 154);
-            mtbNumero.Mask = "(999)000-0000";
+            mtbNumero.Mask = "(351)000-0000";
             mtbNumero.Name = "mtbNumero";
             mtbNumero.Size = new Size(167, 23);
             mtbNumero.TabIndex = 4;
@@ -115,7 +116,6 @@
             lstCompleto.Name = "lstCompleto";
             lstCompleto.Size = new Size(267, 94);
             lstCompleto.TabIndex = 7;
-            lstCompleto.SelectedIndexChanged += lstCompleto_SelectedIndexChanged;
             // 
             // txtContacto
             // 
@@ -137,7 +137,7 @@
             // lblFechaHora
             // 
             lblFechaHora.AutoSize = true;
-            lblFechaHora.Location = new Point(213, 389);
+            lblFechaHora.Location = new Point(28, 418);
             lblFechaHora.Name = "lblFechaHora";
             lblFechaHora.Size = new Size(79, 15);
             lblFechaHora.TabIndex = 10;
@@ -149,21 +149,32 @@
             mtbCantContacto.Name = "mtbCantContacto";
             mtbCantContacto.Size = new Size(69, 23);
             mtbCantContacto.TabIndex = 11;
-            mtbCantContacto.MaskInputRejected += maskedTextBox1_MaskInputRejected_1;
             // 
             // dtpFechaHora
             // 
             dtpFechaHora.Format = DateTimePickerFormat.Short;
-            dtpFechaHora.Location = new Point(298, 383);
+            dtpFechaHora.Location = new Point(113, 412);
             dtpFechaHora.Name = "dtpFechaHora";
             dtpFechaHora.Size = new Size(84, 23);
             dtpFechaHora.TabIndex = 12;
+            // 
+            // btnAbrir
+            // 
+            btnAbrir.BackColor = SystemColors.GradientActiveCaption;
+            btnAbrir.Location = new Point(28, 464);
+            btnAbrir.Name = "btnAbrir";
+            btnAbrir.Size = new Size(142, 30);
+            btnAbrir.TabIndex = 13;
+            btnAbrir.Text = "Abrir Contactos";
+            btnAbrir.UseVisualStyleBackColor = false;
+            btnAbrir.Click += btnAbrir_Click;
             // 
             // frmAgenda
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(445, 436);
+            ClientSize = new Size(334, 532);
+            Controls.Add(btnAbrir);
             Controls.Add(dtpFechaHora);
             Controls.Add(mtbCantContacto);
             Controls.Add(lblFechaHora);
@@ -197,5 +208,6 @@
         private Label lblFechaHora;
         private MaskedTextBox mtbCantContacto;
         private DateTimePicker dtpFechaHora;
+        private Button btnAbrir;
     }
 }
