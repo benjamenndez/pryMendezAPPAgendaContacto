@@ -82,7 +82,7 @@
             mtbNumero.Mask = "(351)000-0000";
             mtbNumero.Name = "mtbNumero";
             mtbNumero.Size = new Size(167, 23);
-            mtbNumero.TabIndex = 4;
+            mtbNumero.TabIndex = 1;
             mtbNumero.MaskInputRejected += mtbNumero_MaskInputRejected;
             // 
             // btnAceptar
@@ -92,7 +92,7 @@
             btnAceptar.Location = new Point(220, 211);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(75, 23);
-            btnAceptar.TabIndex = 5;
+            btnAceptar.TabIndex = 2;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
             btnAceptar.Click += btnAceptar_Click;
@@ -103,7 +103,7 @@
             btnCancelar.Location = new Point(128, 211);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 23);
-            btnCancelar.TabIndex = 6;
+            btnCancelar.TabIndex = 4;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
             // 
@@ -115,14 +115,14 @@
             lstCompleto.Location = new Point(28, 270);
             lstCompleto.Name = "lstCompleto";
             lstCompleto.Size = new Size(267, 94);
-            lstCompleto.TabIndex = 7;
+            lstCompleto.TabIndex = 3;
             // 
             // txtContacto
             // 
             txtContacto.Location = new Point(128, 93);
             txtContacto.Name = "txtContacto";
             txtContacto.Size = new Size(167, 23);
-            txtContacto.TabIndex = 8;
+            txtContacto.TabIndex = 0;
             txtContacto.TextChanged += txtContacto_TextChanged;
             // 
             // lblCantContacto
