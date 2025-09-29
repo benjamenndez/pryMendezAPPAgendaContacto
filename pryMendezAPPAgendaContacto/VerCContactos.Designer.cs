@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVerCContactos));
             btnAceptar = new Button();
             btnAtras = new Button();
             lstDatos = new ListBox();
@@ -71,6 +72,7 @@
             Controls.Add(lstDatos);
             Controls.Add(btnAtras);
             Controls.Add(btnAceptar);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmVerCContactos";
             Text = "VerAllContactos";
             Load += frmVerCContactos_Load;
